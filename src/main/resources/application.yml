@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/Spring?serverTimezone=UTC&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    # Show or not log for each sql query
+    show-sql: true
+    hibernate:
+      # Hibernate ddl auto (validate, create, create-drop, update)
+      ddl-auto: create
+      # Naming strategy
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+
+server:
+  port: 8080
